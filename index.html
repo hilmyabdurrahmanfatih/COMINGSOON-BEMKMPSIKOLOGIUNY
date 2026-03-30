@@ -3,29 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEM KM PSIKOLOGI UNY 2026</title>
-    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="Images/LOGO BEM KM FP UNY-5.png" ></a>
-            <div class="nav-links">
-            </div>
-        </nav>
+    <title>BEM KM PSIKOLOGI UNY</title>
+    <link rel="icon" href="IMAGES/favicon.ico" type="image/x-icon">
 
-<div class="text-box">
-    <h1>COMING SOON</h1>
-    <p>Badan Eksekutif Mahasiswa Keluarga Mahasiswa Fakultas Psikologi Universitas Negeri Yogyakarta masih dalam tahap pengembangan.<br>Kami hadir kembali dengan sistem informasi yang lebih responsif untuk mendukung aspirasi dan kebutuhan akademik kamu.<br>Pantau terus untuk pembaruan selanjutnya.</p>
-</div>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<canvas id="dotCanvas"></canvas>
+<body>
+    <nav id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo-container">
+                <img src="IMAGES/LOGO BEM KM FP UNY-5.png" alt="BEM KM FAKULTAS PSIKOLOGI UNY" class="nav-logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#structure">Struktur dan Program Kerja</a></li>
+                <li><a href="#news">Berita</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=62895386298558&text=Halo%20BEM%20PSIKOLOGI%20UNY" class="nav-btn">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div data-aos="zoom-out" data-aos-duration="1500">  
+            <span class="badge">KABINET ABHYASA NAWASENA</span>
+            <h1>BEM KM FAKULTAS PSIKOLOGI UNY</h1>
+            <p>Bergerak menciptakan sinergi, menghadirkan kebermanfaatan nyata bagi mahasiswa Psikologi. Bersama kita wujudkan lingkungan akademik yang inklusif, progresif, dan penuh semangat kolaborasi untuk kemajuan bersama.</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <p>SCROLL DOWN</p>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil">
+        <span class="section-badge" data-aos="fade-up">Tentang Kami</span>
+        <h2 class="section-title" data-aos="fade-up">Profil Organisasi</h2>
+
+        <div class="about-box" data-aos="fade-up">
+            <p class="about-text">
+                Badan Eksekutif Mahasiswa (BEM) Psikologi UNY adalah lembaga eksekutif tertinggi di tingkat jurusan Psikologi Universitas Negeri Yogyakarta. Kami berdiri sebagai jembatan aspirasi dan agen pengembang potensi mahasiswa demi terciptanya lingkungan akademik yang inklusif dan progresif.
+            </p>
+        </div>
+
+        <div class="vm-grid">
+            <div class="vm-card" data-aos="fade-up">
+                <h3>Visi</h3>
+                <p>BEM KM Fakultas Psikologi Universitas Negeri Yogyakarta sebagai katalisator dan ruang kaderisasi yang berkarakter, sistematis, dan berkelanjutan melalui pembenahan internal, budaya organisasi yang kuat, serta sinergi yang inovatif demi terciptanya kebermanfaatan bagi mahasiswa Psikologi dan lingkungan sekitarnya.</p>
+            </div>
+            <div class="vm-card" data-aos="fade-up">
+                <h3>Misi</h3>
+                <ul>
+                    <li>Memperkuat Kaderisasi yang Sistematis, Berkelanjutan, dan Inklusif.</li>
+                    <li>Melakukan Pembenahan Internal Organisasi secara Menyeluruh.</li>
+                    <li>Mengembangkan BEM KM FP sebagai Fasilitator dan Promotor Pengembangan Mahasiswa.</li>
+                    <li>Mengoptimalkan Sinergi, Kolaborasi, dan Kebermanfaatan Organisasi</li>
+                    <li>Menjalankan Evaluasi, Monitoring, dan Keberlanjutan Setiap Program</li>
+            </div>
+        </div>
+    </section>
+<section id="video-profil" class="video-section">
+        <div class="video-container">
+            <div class="video-content" data-aos="fade-right">
+                <h2 class="section-title">Video Profil</h2>
+                <p class="video-desc">Saksikan dokumentasi kegiatan, testimoni anggota, dan momen spesial BEM KM Fakultas Psikologi UNY. Channel YouTube kami hadir untuk menginspirasi dan berbagi pengalaman organisasi terbaik.</p>
+            </div>
+
+            <div class="video-player" data-aos="fade-left">
+                <div class="video-placeholder">
+                    <div class="play-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="coming-soon-label">Coming Soon</div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section id="structure">
+
+
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <span class="section-badge" data-aos="fade-up">Kepengurusan</span>
+            <h2 class="section-title" data-aos="fade-up">Struktur dan Program kerja Organisasi</h2>
+
+            <button class="btn2" data-aos="fade-up" onclick="window.location.href='strukturorganisasi.html'">Tap To More Info</button>
+
+        </div>  
     </section>
 
 
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <img src="IMAGES/LOGO BEM KM FP UNY-5.png" alt="Logo" class="footer-logo">
+                <p style="color:#666; font-size:14px; line-height:1.6;">Kabinet Harmoni Progresif 2026. Fokus pada kolaborasi, inovasi, dan pelayanan tulus bagi seluruh mahasiswa Psikologi UNY.</p>
+                <div style="margin-top:25px; display:flex; gap:15px;">
+                    <a href="https://www.instagram.com/bemkmpsikologiuny/" style="color:#fff; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@himapsikologiuny6321" style="color:#fff; font-size: 20px;"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@bemkmfpuny" style="color:#fff; font-size: 20px;"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
 
+            <div>
+                <h4 style="color:#00ccff; margin-bottom:20px; font-weight: 700;">Kontak Kami</h4>
+                <p style="color:#666; font-size:14px; margin-bottom: 10px;"><i class="fas fa-envelope" style="margin-right: 10px;"></i> bempsi.uny@gmail.com</p>
+                <p style="color:#666; font-size:14px;"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Kampus UNY Karangmalang, Yogyakarta</p>
+            </div>
 
+            <div class="footer-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1051.3144471629155!2d110.38746887951241!3d-7.775166186751237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59690f4276ed%3A0xba1b5fc08c0037be!2sFakultas%20Psikologi%20UNY!5e0!3m2!1sid!2sid!4v1774573221708!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; BEM FAKULTAS PSIKOLOGI UNY 2026
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS Animation
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        // Efek Scroll pada Navbar
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        const canvas = document.getElementById('dotCanvas');
+        const ctx = canvas.getContext('2d');
+        let dots = [];
+        const mouse = { x: -500, y: -500, radius: 180 };
+
+        // Inisialisasi grid titik dengan spasi yang sangat rapat
+        function initCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            dots = [];
+            
+            const spacing = 12; // Semakin rapat agar tekstur lebih halus
+            for (let x = 0; x < canvas.width + spacing; x += spacing) {
+                for (let y = 0; y < canvas.height + spacing; y += spacing) {
+                    dots.push({
+                        x: x,
+                        y: y,
+                        originX: x,
+                        originY: y,
+                        size: 1.0, // Ukuran awal lebih jelas agar semua dot terlihat
+                        baseSize: 1.0
+                    });
+                }
+            }
+        }
+
+        // Fungsi pewarnaan gradasi blue langit berdasarkan kekuatan pressure
+        function getPressureColor(force) {
+            if (force > 0.05) {
+                const blueStrength = Math.floor(force * 255);
+                const skyBlueG = Math.min(235, 180 + Math.floor(blueStrength * 0.2));
+                const skyBlueB = Math.min(255, 220 + Math.floor(blueStrength * 0.1));
+                return `rgb(135, ${skyBlueG}, ${skyBlueB})`;
+            }
+            return '#87ceeb'; // warna blue langit default
+        }
+
+        // Loop Animasi
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            for (let i = 0; i < dots.length; i++) {
+                let dot = dots[i];
+                
+                let dx = mouse.x - dot.x;
+                let dy = mouse.y - dot.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < mouse.radius) {
+                    let force = (mouse.radius - distance) / mouse.radius;
+                    
+                    // Efek Timbul (Membesar sedikit saja)
+                    dot.size = dot.baseSize + (force * force * 3.5);
+                    
+                    // Mainkan Color Gradient Biru
+                    ctx.fillStyle = getPressureColor(force);
+                } else {
+                    // Background dot tetap terlihat dan sedikit timbul
+                    dot.size += ((dot.baseSize + 0.2) - dot.size) * 0.1;
+                    ctx.fillStyle = '#cfe9ff';
+                }
+
+                ctx.beginPath();
+                ctx.arc(dot.x, dot.y, dot.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            requestAnimationFrame(animate);
+        }
+
+        // Event Listeners
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+
+        window.addEventListener('resize', initCanvas);
+
+        // Jalankan
+        initCanvas();
+        animate();
+    </script>
 </body>
 </html>
