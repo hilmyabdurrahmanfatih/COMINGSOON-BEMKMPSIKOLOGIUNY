@@ -687,6 +687,205 @@
             color: #444;
         }
 
+        /* --- STRUKTUR ORGANISASI PAGE --- */
+
+        .struktur-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(IMAGES/Your\ paragraph\ text\ \(1\).jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+
+        .struktur-hero h1 {
+            font-size: 45px;
+            margin: 20% 0 20px;
+            font-weight: 800;
+            line-height: 1.1;
+            color: white;
+        }
+
+        
+        #struktur-detail {
+            padding: 100px 5% 100px;
+            max-width: 1300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .struktur-section {
+            width: 100%;
+        }
+
+        .struktur-subtitle {
+            font-size: clamp(28px, 4vw, 38px);
+            color: #00b7ff;
+            margin: 0 0 60px 0;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .carousel-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .carousel-btn {
+            background: rgba(0, 183, 255, 0.15);
+            border: 2px solid rgba(0, 183, 255, 0.3);
+            color: #00b7ff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background: rgba(0, 183, 255, 0.3);
+            border-color: #00b7ff;
+            transform: scale(1.1);
+        }
+
+        .carousel-wrapper {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 15px;
+            transition: transform 0.5s ease-in-out;
+            width: fit-content;
+        }
+
+        .struktur-card {
+            flex: 0 0 260px;
+            background: white;
+            border-radius: 25px;
+            padding: 25px 20px;
+            box-shadow: 0 10px 40px rgba(0, 59, 115, 0.15);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .struktur-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 183, 255, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .struktur-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 60px rgba(0, 183, 255, 0.25), 
+                        inset 0 0 20px rgba(0, 183, 255, 0.05);
+            background: linear-gradient(135deg, #f8fcff 0%, #f0f8ff 100%);
+        }
+
+        .struktur-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-icon {
+            position: relative;
+            z-index: 2;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #004078 0%, #003b73 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 59, 115, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .struktur-card:hover .card-icon {
+            background: linear-gradient(135deg, #0055a8 0%, #004090 100%);
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(0, 183, 255, 0.3);
+        }
+
+        .struktur-card h3 {
+            color: #003b73;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 15px 0;
+            transition: all 0.4s ease;
+        }
+
+        .struktur-card:hover h3 {
+            color: #004078;
+        }
+
+        .struktur-card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0 0 20px 0;
+            transition: all 0.4s ease;
+            flex-grow: 1;
+        }
+
+        .struktur-card:hover p {
+            color: #333;
+        }
+
+        .card-btn {
+            position: relative;
+            z-index: 2;
+            background: linear-gradient(135deg, #004078 0%, #003b73 100%);
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .card-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 59, 115, 0.35);
+            background: linear-gradient(135deg, #0055a8 0%, #004090 100%);
+        }
+
         /* --- 6. RESPONSIVE --- */
         @media (max-width: 992px) {
             .nav-links { display: none; }
@@ -696,6 +895,7 @@
             .video-content { text-align: center; }
             .video-content .section-title { text-align: center; }
             .video-cta { justify-content: center; }
+            .ornamen-bintang { display: none; }
         }
         @media (max-width: 768px) {
             .vm-grid, .footer-grid { grid-template-columns: 1fr; gap: 30px; }
@@ -705,4 +905,20 @@
             .video-container { grid-template-columns: 1fr; }
             .video-placeholder { aspect-ratio: 16/9; }
             .btn-youtube { width: 100%; justify-content: center; }
+            #struktur-detail { padding: 80px 5% 80px; }
+            .photo-container { min-height: 60vh; }
+            .photo-overlay h1 { font-size: 36px; }
+            .carousel-container { gap: 15px; }
+            .struktur-card { flex: 0 0 250px; padding: 30px 20px; }
+            .carousel-btn { width: 40px; height: 40px; font-size: 16px; }
+        }
+        @media (max-width: 480px) {
+            .photo-container { min-height: 50vh; }
+            .photo-overlay h1 { font-size: 26px; }
+            .struktur-subtitle { font-size: 22px; margin-bottom: 40px; }
+            .struktur-card { flex: 0 0 200px; padding: 25px 15px; font-size: 13px; }
+            .card-icon { width: 60px; height: 60px; font-size: 28px; }
+            .struktur-card h3 { font-size: 16px; }
+            .carousel-btn { display: none; }
+            .carousel-container { gap: 10px; }
         }
