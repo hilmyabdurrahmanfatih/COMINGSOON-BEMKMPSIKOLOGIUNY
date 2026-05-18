@@ -68,6 +68,11 @@
             width: 100%;
         }
 
+        .nav-logo-container {
+            display: flex;
+            align-items: center;
+        }
+
         .nav-logo {
             height: 45px;
             width: auto;
@@ -703,14 +708,6 @@
             position: relative;
         }
 
-        .struktur-hero h1 {
-            font-size: 45px;
-            margin: 20% 0 20px;
-            font-weight: 800;
-            line-height: 1.1;
-            color: white;
-        }
-
         
         #struktur-detail {
             padding: 100px 5% 100px;
@@ -886,6 +883,350 @@
             background: linear-gradient(135deg, #0055a8 0%, #004090 100%);
         }
 
+        /* --- KETUA DAN WAKIL KETUA SECTION --- */
+
+        .ketuawakilhero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/ketua\ wakil.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+        .sekre-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/sekre.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+        .keuangan-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/keuangan.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+        .BPMO-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/BPMO.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+        .PSDM-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/PSDM.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+        .MIKAT-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/MIKAT.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+        .ADVOKASI-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/ADVOKESMA.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+
+        .HUMAS-hero {
+        height: 100vh;
+        padding: 0 50% 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('IMAGES/HUMAS.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
+        position: relative;
+        }
+
+        .PKK-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/PKK.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }
+
+        .KASTRAT-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/KASTRAT.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }            
+        .BISMIT-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/BISMIT.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }            
+        .SOSMAS-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/SOSMAS.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }            
+        .KEROHANIAN-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/KEROHANIAN.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }                                
+        .MEDINFO-hero {
+            height: 100vh;
+            padding: 0 50% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('IMAGES/MEDINFO.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+        }        
+
+        .ketua-section {
+            padding: 100px 5% 100px;
+            max-width: 1300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .ketua-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ketua-header-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .ketua-header-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .ketua-description {
+            color: #e8f4ff;
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .ketua-description p {
+            margin: 0;
+        }
+
+        /* --- PROGRAM KERJA SECTION --- */
+        .proker-section {
+            background: transparent;
+            padding: 100px 5% 80px;
+        }
+
+        .proker-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .proker-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #003b73;
+            text-align: center;
+            margin-bottom: 60px;
+            letter-spacing: 2px;
+        }
+
+        .proker-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .proker-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .proker-row.center-row {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+        .proker-row.center-row1 {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .proker-card {
+            background: linear-gradient(135deg, rgba(230, 240, 255, 0.8), rgba(200, 230, 255, 0.6));
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 10px 30px rgba(0, 31, 115, 0.1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proker-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 183, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .proker-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 60px rgba(238, 250, 255, 0.734);
+            background: linear-gradient(135deg, rgba(230, 240, 255, 0.92), rgba(255, 255, 255, 0.75));
+
+        }
+
+        .proker-card:hover::before {
+            opacity: 1;
+        }
+
+        .proker-card h3 {
+            position: relative;
+            z-index: 2;
+            color: #003b73;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .proker-card:hover h3 {
+            color: #004078;
+        }
+
+        .proker-card p {
+            position: relative;
+            z-index: 2;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0;
+            transition: all 0.3s ease;
+        }
+
+        .proker-card:hover p {
+            color: #333;
+        }
+
         /* --- 6. RESPONSIVE --- */
         @media (max-width: 992px) {
             .nav-links { display: none; }
@@ -896,6 +1237,8 @@
             .video-content .section-title { text-align: center; }
             .video-cta { justify-content: center; }
             .ornamen-bintang { display: none; }
+            .proker-row { grid-template-columns: repeat(2, 1fr); }
+            .proker-row.center-row { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
             .vm-grid, .footer-grid { grid-template-columns: 1fr; gap: 30px; }
@@ -911,6 +1254,12 @@
             .carousel-container { gap: 15px; }
             .struktur-card { flex: 0 0 250px; padding: 30px 20px; }
             .carousel-btn { width: 40px; height: 40px; font-size: 16px; }
+            .proker-title { font-size: 2.2rem; }
+            .proker-row { grid-template-columns: 1fr; }
+            .proker-row.center-row { grid-template-columns: 1fr; }
+            .ketua-header-img { width: 90%; }
+            .proker-section { padding: 60px 5% 40px; }
+            .ketua-section { padding: 60px 5% 40px; }
         }
         @media (max-width: 480px) {
             .photo-container { min-height: 50vh; }
@@ -921,4 +1270,8 @@
             .struktur-card h3 { font-size: 16px; }
             .carousel-btn { display: none; }
             .carousel-container { gap: 10px; }
+            .proker-title { font-size: 1.8rem; }
+            .proker-card { padding: 30px 20px; min-height: 280px; }
+            .proker-row, .proker-row.center-row { grid-template-columns: 1fr; }
+            .ketua-description { font-size: 14px; }
         }
