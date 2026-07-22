@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<canvas id="dotCanvas"></canvas>
 <body>
     <nav id="mainNav">
         <div class="nav-container">
             <div class="nav-logo-container">
-                <img src="IMAGES/LOGO BEM KM FP UNY-5.png" alt="BEM KM FAKULTAS PSIKOLOGI UNY" class="nav-logo">
+                <a href="index.html"><img src="IMAGES/LOGO BEM KM FP UNY-5.png" alt="BEM KM FAKULTAS PSIKOLOGI UNY" class="nav-logo"></a>
             </div>
 
             <ul class="nav-links">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="strukturorganisasi.html">Struktur dan Program Kerja</a></li>
-                <li><a href="#news">Berita</a></li>
+                <li><a href="ARTIKEL.html">Informasi</a></li>
                 <li><a href="https://api.whatsapp.com/send/?phone=62895386298558&text=Halo%20BEM%20PSIKOLOGI%20UNY" class="nav-btn">Hubungi Kami</a></li>
             </ul>
         </div>
@@ -72,7 +71,7 @@
             <p style="color:#666; font-size:14px; line-height:1.6;">Kabinet Harmoni Progresif 2026. Fokus pada kolaborasi, inovasi, dan pelayanan tulus bagi seluruh mahasiswa Psikologi UNY.</p>
             <div style="margin-top:25px; display:flex; gap:15px;">
                 <a href="https://www.instagram.com/bemkmpsikologiuny/" style="color:#fff; font-size: 20px;"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@himapsikologiuny6321" style="color:#fff; font-size: 20px;"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com/@BEMKMPSIKOLOGIUNY" style="color:#fff; font-size: 20px;"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.tiktok.com/@bemkmfpuny" style="color:#fff; font-size: 20px;"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
@@ -110,88 +109,6 @@
                 nav.classList.remove('scrolled');
             }
         });
-
-        const canvas = document.getElementById('dotCanvas');
-        const ctx = canvas.getContext('2d');
-        let dots = [];
-        const mouse = { x: -500, y: -500, radius: 180 };
-
-        // Inisialisasi grid titik dengan spasi yang sangat rapat
-        function initCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            dots = [];
-            
-            const spacing = 12; // Semakin rapat agar tekstur lebih halus
-            for (let x = 0; x < canvas.width + spacing; x += spacing) {
-                for (let y = 0; y < canvas.height + spacing; y += spacing) {
-                    dots.push({
-                        x: x,
-                        y: y,
-                        originX: x,
-                        originY: y,
-                        size: 1.0, // Ukuran awal lebih jelas agar semua dot terlihat
-                        baseSize: 1.0
-                    });
-                }
-            }
-        }
-
-        // Fungsi pewarnaan gradasi blue langit berdasarkan kekuatan pressure
-        function getPressureColor(force) {
-            if (force > 0.05) {
-                const blueStrength = Math.floor(force * 255);
-                const skyBlueG = Math.min(235, 180 + Math.floor(blueStrength * 0.2));
-                const skyBlueB = Math.min(255, 220 + Math.floor(blueStrength * 0.1));
-                return `rgb(135, ${skyBlueG}, ${skyBlueB})`;
-            }
-            return '#87ceeb'; // warna blue langit default
-        }
-
-        // Loop Animasi
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            for (let i = 0; i < dots.length; i++) {
-                let dot = dots[i];
-                
-                let dx = mouse.x - dot.x;
-                let dy = mouse.y - dot.y;
-                let distance = Math.sqrt(dx * dx + dy * dy);
-                
-                if (distance < mouse.radius) {
-                    let force = (mouse.radius - distance) / mouse.radius;
-                    
-                    // Efek Timbul (Membesar sedikit saja)
-                    dot.size = dot.baseSize + (force * force * 3.5);
-                    
-                    // Mainkan Color Gradient Biru
-                    ctx.fillStyle = getPressureColor(force);
-                } else {
-                    // Background dot tetap terlihat dan sedikit timbul
-                    dot.size += ((dot.baseSize + 0.2) - dot.size) * 0.1;
-                    ctx.fillStyle = '#cfe9ff';
-                }
-
-                ctx.beginPath();
-                ctx.arc(dot.x, dot.y, dot.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-            requestAnimationFrame(animate);
-        }
-
-        // Event Listeners
-        window.addEventListener('mousemove', (e) => {
-            mouse.x = e.x;
-            mouse.y = e.y;
-        });
-
-        window.addEventListener('resize', initCanvas);
-
-        // Jalankan
-        initCanvas();
-        animate();
-
         // Carousel functionality
         const carouselTrack = document.getElementById('carouselTrack');
         let scrollPosition = 0;
