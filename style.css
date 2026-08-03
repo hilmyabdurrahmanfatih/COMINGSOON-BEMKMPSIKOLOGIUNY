@@ -782,6 +782,7 @@
             flex: 1;
             overflow: hidden;
             border-radius: 20px;
+            scroll-snap-type: x mandatory;
         }
 
         .carousel-track {
@@ -796,6 +797,7 @@
             background: white;
             border-radius: 25px;
             padding: 25px 20px;
+            scroll-snap-align: start;
             box-shadow: 0 10px 40px rgba(0, 59, 115, 0.15);
             transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             display: flex;
@@ -1279,8 +1281,30 @@
             .photo-container { min-height: 60vh; }
             .photo-overlay h1 { font-size: 36px; }
             .carousel-container { gap: 15px; }
+            .carousel-wrapper {
+                overflow-x: auto;
+                overflow-y: hidden;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                -ms-overflow-style: none;
+                scrollbar-width: thin;
+            }
+            .carousel-track {
+                transition: none;
+                transform: none !important;
+            }
+            .carousel-track::-webkit-scrollbar {
+                height: 8px;
+            }
+            .carousel-track::-webkit-scrollbar-thumb {
+                background: rgba(0, 183, 255, 0.35);
+                border-radius: 999px;
+            }
+            .carousel-track::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.55);
+            }
+            .carousel-btn { display: none; width: 40px; height: 40px; font-size: 16px; }
             .struktur-card { flex: 0 0 250px; padding: 30px 20px; }
-            .carousel-btn { width: 40px; height: 40px; font-size: 16px; }
             .proker-title { font-size: 2.2rem; }
             .proker-row { grid-template-columns: 1fr; }
             .proker-row.center-row { grid-template-columns: 1fr; }
